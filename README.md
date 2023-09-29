@@ -1,4 +1,4 @@
-# streaming 06: Smart BBQ Smoker Temperature Monitoring System
+# Streaming 06: Smart BBQ Smoker Temperature Monitoring System
 Publisher: Malcolm Phillip
 Date:  29 September 2023
 
@@ -41,18 +41,13 @@ cd Your file name
 ## How the Project Works
 The project utilizes RabbitMQ queues for real-time data processing. The consumers (Consumer_smoker_bbq.py, Consumer_A_smoker_bbq.py, python Consumer_B_smoker_bbq.py) monitor specific queues for temperature data. If a significant temperature change is detected within a specific time window, an alert is triggered. The producer script (smoker_bbq_producer.py) can be used to simulate temperature data generation for testing purposes.
 
-### Screenshots
-## Terminal with Producer & Consumers Running
+## Screenshots
+### Terminal with Producer & Consumers Running
 ![Alt text](<Screenshot 2023-09-29 at 5.47.59 PM.png>)
 
-## RabbitMQ Admin Console
-![Alt text](<Screenshot 2023-09-29 at 5.48.24 PM.png>)
-
-1. Monitoring RabbitMQ Admin Website: The script will open the RabbitMQ Admin website in your default web browser. You can monitor the RabbitMQ queues from there. If you don't want the website to open automatically, set show_offer to False in the script.
-
-### RabbitMQ Admin Website Screenshot:
-![Alt text](<Screenshot 2023-09-20 at 7.11.41 AM.png>)
-# Note: Interesting part of the RabbitMQ console, notice all the Totals are "0"
+### RabbitMQ Admin Console
+![Alt text](<Screenshot 2023-09-29 at 5.48.24 PM-1.png>)
+#### Note: Interesting part of the RabbitMQ console, notice all the Totals are "0"
 
 ## Reference
 
